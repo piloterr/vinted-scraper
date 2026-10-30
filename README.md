@@ -233,19 +233,19 @@ Example response from the API reference, abridged — real values depend on the 
   "id": 9437210920,
   "url": "https://www.vinted.com/items/9437210920-purple-prom-dress",
   "user": {
-    "id": 3163220665,
-    "city": "CHAMBERSBURG, PA",
-    "login": "gingertastic88",
+    "id": 0,
+    "city": "example",
+    "login": "example",
     "photo": {
-      "id": 317632205,
-      "url": "https://images1.vinted.net/t/01_00734_TjeYgCPBFTM9wAukJhk91fHm/f800/1781705165.webp?s=996d52a34c31e60e6cad8c3ad1d0bd504928d6e8",
-      "width": 96,
-      "height": 96
+      "id": 0,
+      "url": "example",
+      "width": 0,
+      "height": 0
     },
     "business": false,
-    "item_count": 10,
+    "item_count": 0,
     "profile_url": "example",
-    "country_code": "US",
+    "country_code": "example",
     "verification": {
       "email": {
         "valid": true,
@@ -254,13 +254,13 @@ Example response from the API reference, abridged — real values depend on the 
       "google": {
         "valid": true,
         "available": true,
-        "verified_at": "2026-06-17T08:06:05-06:00"
+        "verified_at": "example"
       }
     },
-    "country_title": "United States",
-    "feedback_count": 1,
-    "feedback_reputation": 1,
-    "positive_feedback_count": 1
+    "country_title": "example",
+    "feedback_count": 0,
+    "feedback_reputation": 0,
+    "positive_feedback_count": 0
   },
   "color": "Purple",
   "price": {
@@ -537,8 +537,8 @@ Example response from the API reference, abridged — real values depend on the 
       "url": "https://www.vinted.com/items/9417084957-tempted-black-draped-cowl-neck-short-sleeve-mini-dress",
       "path": "/items/9417084957-tempted-black-draped-cowl-neck-short-sleeve-mini-dress",
       "user": {
-        "id": 3167755373,
-        "login": "laceejayy",
+        "id": 0,
+        "login": "example",
         "photo": {},
         "business": false,
         "profile_url": "example"
@@ -585,8 +585,8 @@ Example response from the API reference, abridged — real values depend on the 
       "url": "https://www.vinted.com/items/9422855356-wild-fable-coral-pink-maxi-dress-with-floral-cups-and-open-back",
       "path": "/items/9422855356-wild-fable-coral-pink-maxi-dress-with-floral-cups-and-open-back",
       "user": {
-        "id": 3168044178,
-        "login": "gabriellamiah",
+        "id": 0,
+        "login": "example",
         "photo": {},
         "business": false,
         "profile_url": "example"
