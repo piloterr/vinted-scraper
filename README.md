@@ -73,7 +73,7 @@ response = requests.get(
     params={
         "query": "https://www.vinted.com/items/9437210920-purple-prom-dress",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -425,7 +425,7 @@ response = requests.get(
     params={
         "query": "nike",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -695,7 +695,7 @@ response = requests.get(
     params={
         "query": "https://www.vinted.fr/member/123456789-username",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
