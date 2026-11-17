@@ -442,54 +442,16 @@ type VintedSearch = {
     id?: number;
     url?: string;
     path?: string;
-    user?: {
-      id?: number;
-      login?: string;
-      photo?: Record<string, unknown>;
-      business?: boolean;
-      profile_url?: string;
-    };
     photo?: {
-      id?: number;
       url?: string;
-      width?: number;
-      height?: number;
-      is_main?: boolean;
     };
     price?: {
       amount?: string;
       currency_code?: string;
     };
     title?: string;
-    photos?: {
-      id?: number;
-      url?: string;
-      width?: number;
-      height?: number;
-      is_main?: boolean;
-      image_no?: number;
-    }[];
     status?: string;
-    item_box?: {
-      item_id?: number;
-      first_line?: string;
-      second_line?: string;
-    };
-    promoted?: boolean;
-    is_visible?: boolean;
     size_title?: string;
-    brand_title?: string;
-    service_fee?: {
-      amount?: string;
-      currency_code?: string;
-    };
-    is_favourite?: boolean;
-    content_source?: string;
-    favourite_count?: number;
-    total_item_price?: {
-      amount?: string;
-      currency_code?: string;
-    };
   }[];
   pagination?: {
     next?: number;
@@ -534,109 +496,27 @@ Example response from the API reference, abridged — real values depend on the 
 {
   "results": [
     {
-      "id": 9417084957,
-      "url": "https://www.vinted.com/items/9417084957-tempted-black-draped-cowl-neck-short-sleeve-mini-dress",
-      "path": "/items/9417084957-tempted-black-draped-cowl-neck-short-sleeve-mini-dress",
-      "user": {
-        "id": 0,
-        "login": "example",
-        "photo": {},
-        "business": false,
-        "profile_url": "example"
-      },
+      "id": 10671681930,
+      "url": "https://www.vinted.com/items/10671681930-boutique-clothes",
+      "path": "/items/10671681930-boutique-clothes",
       "photo": {
-        "id": 39862469776,
-        "url": "https://images1.vinted.net/t/02_023f8_BqApqrfHRr4eYif4gfmsy9a7/f800/1784247894.jpeg?s=2f0f0b44d41db05b396ceae775aef3c37f8116be",
-        "width": 600,
-        "height": 800,
-        "is_main": true
+        "url": "https://images1.vinted.net/t/06_017cb_ii7N7PvDJ8YN3Q5QLceLKpxf/310x430/260556ef.webp?s=2201d1dccba5648071e278363d6469c2b7d8e499"
       },
       "price": {
-        "amount": "25.0",
+        "amount": "$4.00",
         "currency_code": "USD"
       },
-      "title": "Tempted Black Draped Cowl-Neck Short Sleeve Mini dress",
-      "photos": [
-        {}
-      ],
-      "status": "Very good",
-      "item_box": {
-        "item_id": 9417084957,
-        "first_line": "tempted",
-        "second_line": "S / US 4-6 · Very good"
-      },
-      "promoted": true,
-      "is_visible": true,
-      "size_title": "S / US 4-6",
-      "brand_title": "tempted",
-      "service_fee": {
-        "amount": "1.95",
-        "currency_code": "USD"
-      },
-      "is_favourite": false,
-      "content_source": "search_promoted_items",
-      "favourite_count": 55,
-      "total_item_price": {
-        "amount": "26.95",
-        "currency_code": "USD"
-      }
-    },
-    {
-      "id": 9422855356,
-      "url": "https://www.vinted.com/items/9422855356-wild-fable-coral-pink-maxi-dress-with-floral-cups-and-open-back",
-      "path": "/items/9422855356-wild-fable-coral-pink-maxi-dress-with-floral-cups-and-open-back",
-      "user": {
-        "id": 0,
-        "login": "example",
-        "photo": {},
-        "business": false,
-        "profile_url": "example"
-      },
-      "photo": {
-        "id": 39887137204,
-        "url": "https://images1.vinted.net/t/06_00485_DbqyZigqBuvGGQTL4icBDLi5/f800/1784313642.jpeg?s=cf2c907b215da3820cb5abe89e418d934131512c",
-        "width": 600,
-        "height": 800,
-        "is_main": true
-      },
-      "price": {
-        "amount": "12.0",
-        "currency_code": "USD"
-      },
-      "title": "Wild Fable coral pink maxi dress with floral cups and open back",
-      "photos": [
-        {},
-        {}
-      ],
-      "status": "Very good",
-      "item_box": {
-        "item_id": 9422855356,
-        "first_line": "Wild Fable",
-        "second_line": "S / US 4-6 · Very good"
-      },
-      "promoted": false,
-      "is_visible": true,
-      "size_title": "S / US 4-6",
-      "brand_title": "Wild Fable",
-      "service_fee": {
-        "amount": "1.3",
-        "currency_code": "USD"
-      },
-      "is_favourite": false,
-      "content_source": "search",
-      "favourite_count": 52,
-      "total_item_price": {
-        "amount": "13.3",
-        "currency_code": "USD"
-      }
+      "title": "boutique clothes",
+      "status": "New without tags",
+      "size_title": "S / US 4-6"
     }
   ],
   "pagination": {
     "next": 2,
     "page": 1,
     "per_page": 24,
-    "total_pages": 40,
-    "total_results": 960
+    "total_pages": 21,
+    "total_results": 500
   }
 }
 ```
@@ -649,27 +529,17 @@ Example response from the API reference, abridged — real values depend on the 
 | `results[].id` | integer |  |
 | `results[].url` | string |  |
 | `results[].path` | string |  |
-| `results[].user` | object |  |
 | `results[].photo` | object |  |
 | `results[].price` | object |  |
 | `results[].title` | string |  |
-| `results[].photos[]` | object[] |  |
 | `results[].status` | string |  |
-| `results[].item_box` | object |  |
-| `results[].promoted` | boolean |  |
-| `results[].is_visible` | boolean |  |
 | `results[].size_title` | string |  |
-| `results[].brand_title` | string |  |
-| `results[].service_fee` | object |  |
-| `results[].is_favourite` | boolean |  |
-| `results[].content_source` | string |  |
-| `results[].favourite_count` | integer |  |
-| `results[].total_item_price` | object |  |
 | `pagination` | object |  |
 | `pagination.next` | integer |  |
 | `pagination.page` | integer |  |
 | `pagination.per_page` | integer |  |
 | `pagination.total_pages` | integer |  |
+| `pagination.total_results` | integer |  |
 
 ## Vinted User Info API
 
@@ -919,7 +789,7 @@ Credits per call: `/v2/vinted/item` **1**, `/v2/vinted/search` **1**, `/v2/vinte
 
 ### What data does the Vinted API return?
 
-Each endpoint returns structured JSON: **Vinted Item** — `id`, `url`, `user`, `user.id`, `user.city`, `user.login`; **Vinted Search** — `results[]`, `results[].id`, `results[].url`, `results[].path`, `results[].user`, `results[].photo`; **Vinted User Info** — `id`, `city`, `path`, `about`, `email`, `login`.
+Each endpoint returns structured JSON: **Vinted Item** — `id`, `url`, `user`, `user.id`, `user.city`, `user.login`; **Vinted Search** — `results[]`, `results[].id`, `results[].url`, `results[].path`, `results[].photo`, `results[].price`; **Vinted User Info** — `id`, `city`, `path`, `about`, `email`, `login`.
 
 ### How do I paginate Vinted results?
 
